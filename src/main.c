@@ -8,6 +8,12 @@ int main(){
     }
 
     InitApplication();
+    UpdateInput();
+
+    while(CheckWindow(session->window)) {
+        UpdateApplication();
+        UpdateInput();
+    }
 
     CloseSession(session);
     return 0;

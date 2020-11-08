@@ -10,4 +10,6 @@
 bool NewWindow(Window* window);
 void RemoveWindow(Window* window);
 
+bool CheckWindow(Window* window);
+
 #endif

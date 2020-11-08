@@ -3,4 +3,6 @@
 
 void InitApplication();
 
+void UpdateApplication();
+
 #endif
