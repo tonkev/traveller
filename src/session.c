@@ -18,7 +18,7 @@ bool CreateSession(Session* session) {
 void CloseSession(Session* session) {
     LogInfo("Closing session\n");
 
-    MemRelease(session);
+    MemRelease(session->window);
 
     LogInfo("Closed session\n");
 }

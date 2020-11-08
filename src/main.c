@@ -1,7 +1,7 @@
-#include <traveller.h>
+#include "traveller.h"
 
 int main(){
-    Session* session = MemGet(sizeof(Session));
+    Session session;
     if (!CreateSession(session)) {
         LogError("Failed to create session\n");
         return 1;
@@ -10,7 +10,7 @@ int main(){
     InitApplication();
     UpdateInput();
 
-    while(CheckWindow(session->window)) {
+    while(CheckWindow(session.window)) {
         UpdateApplication();
         UpdateInput();
     }
