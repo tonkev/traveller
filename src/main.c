@@ -2,7 +2,7 @@
 
 int main(){
     Session session;
-    if (!CreateSession(session)) {
+    if (!CreateSession(&session)) {
         LogError("Failed to create session\n");
         return 1;
     }
@@ -15,6 +15,6 @@ int main(){
         UpdateInput();
     }
 
-    CloseSession(session);
+    CloseSession(&session);
     return 0;
 }
