@@ -10,7 +10,7 @@ int main(){
     InitApplication();
     UpdateInput();
 
-    while(CheckWindow(session.window)) {
+    while(CheckWindow(&session.window)) {
         UpdateApplication();
         UpdateInput();
     }

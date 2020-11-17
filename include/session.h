@@ -5,7 +5,7 @@
 #include "window.h"
 
 typedef struct {
-    Window* window;
+    Window window;
 } Session;
 
 bool CreateSession(Session* session);
