@@ -2,6 +2,7 @@
 #define TRAVELLER_H
 
 #include "logging.h"
+#include "vector.h"
 #include "session.h"
 #include "input.h"
 #include "application.h"
