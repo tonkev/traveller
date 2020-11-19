@@ -1,7 +1,7 @@
 #ifndef INPUT_WIN_H
 #define INPUT_WIN_H
 
-#include <winuser.h>
+#include <windows.h>
 
 typedef enum {
     MOUSE_L = 1, MOUSE_R, MOUSE_M = 4, MOUSE_3, MOUSE_4, KEY_BACKSPACE = 8,
